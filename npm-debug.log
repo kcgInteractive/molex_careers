@@ -1,0 +1,260 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'grunt-check-pages',
+1 verbose cli   '--save-dev' ]
+2 info using npm@3.8.0
+3 info using node@v0.10.36
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData grunt-check-pages
+8 silly fetchNamedPackageData grunt-check-pages
+9 silly mapToRegistry name grunt-check-pages
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry http://registry.npmjs.org/
+12 silly mapToRegistry uri http://registry.npmjs.org/grunt-check-pages
+13 verbose request uri http://registry.npmjs.org/grunt-check-pages
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 13:44:46
+16 verbose request id 8d18806c53d27f5e
+17 http request GET http://registry.npmjs.org/grunt-check-pages
+18 http 401 http://registry.npmjs.org/grunt-check-pages
+19 verbose bad json <HTML><HEAD>
+19 verbose bad json <TITLE>Access Denied</TITLE>
+19 verbose bad json </HEAD>
+19 verbose bad json <BODY>
+19 verbose bad json <FONT face="Helvetica">
+19 verbose bad json <big><strong></strong></big><BR>
+19 verbose bad json </FONT>
+19 verbose bad json <blockquote>
+19 verbose bad json <TABLE border=0 cellPadding=1 width="80%">
+19 verbose bad json <TR><TD>
+19 verbose bad json <FONT face="Helvetica">
+19 verbose bad json <big>Access Denied (authentication_failed)</big>
+19 verbose bad json <BR>
+19 verbose bad json <BR>
+19 verbose bad json </FONT>
+19 verbose bad json </TD></TR>
+19 verbose bad json <TR><TD>
+19 verbose bad json <FONT face="Helvetica">
+19 verbose bad json Your credentials could not be authenticated: "Credentials are missing.". You will not be permitted access until your credentials can be verified.
+19 verbose bad json </FONT>
+19 verbose bad json </TD></TR>
+19 verbose bad json <TR><TD>
+19 verbose bad json <FONT face="Helvetica">
+19 verbose bad json This is typically caused by an incorrect username and/or password, but could also be caused by network problems.
+19 verbose bad json </FONT>
+19 verbose bad json </TD></TR>
+19 verbose bad json <TR><TD>
+19 verbose bad json <FONT face="Helvetica" SIZE=2>
+19 verbose bad json <BR>
+19 verbose bad json For assistance, contact your network support team.<br><br>Your request was categorized by Blue Coat Web Filter as 'Technology/Internet'. <br>If you wish to question or dispute this result, please click <a href="http://sitereview.bluecoat.com/sitereview.jsp?referrer=136&url=http://registry.npmjs.org/grunt-check-pages">here</a>.
+19 verbose bad json </FONT>
+19 verbose bad json </TD></TR>
+19 verbose bad json </TABLE>
+19 verbose bad json </blockquote>
+19 verbose bad json </FONT>
+19 verbose bad json </BODY></HTML>
+20 error registry error parsing json
+21 verbose headers { 'cache-control': 'no-cache',
+21 verbose headers   pragma: 'no-cache',
+21 verbose headers   'www-authenticate': 'NTLM, BASIC realm="KOCHNTLM"',
+21 verbose headers   'content-type': 'text/html; charset=utf-8',
+21 verbose headers   'set-cookie': [ 'BCSI-CS-8d5ba22854cc778d=2; Path=/' ],
+21 verbose headers   connection: 'close',
+21 verbose headers   'content-length': '1091' }
+22 silly get cb [ 401,
+22 silly get   { 'cache-control': 'no-cache',
+22 silly get     pragma: 'no-cache',
+22 silly get     'www-authenticate': 'NTLM, BASIC realm="KOCHNTLM"',
+22 silly get     'content-type': 'text/html; charset=utf-8',
+22 silly get     'set-cookie': [ 'BCSI-CS-8d5ba22854cc778d=2; Path=/' ],
+22 silly get     connection: 'close',
+22 silly get     'content-length': '1091' } ]
+23 silly fetchPackageMetaData SyntaxError: Unexpected token <
+23 silly fetchPackageMetaData <HTML><HEAD>
+23 silly fetchPackageMetaData <TITLE>Access Denied</TITLE>
+23 silly fetchPackageMetaData </HEAD>
+23 silly fetchPackageMetaData <BODY>
+23 silly fetchPackageMetaData <FONT face="Helvetica">
+23 silly fetchPackageMetaData <big><strong></strong></big><BR>
+23 silly fetchPackageMetaData </FONT>
+23 silly fetchPackageMetaData <blockquote>
+23 silly fetchPackageMetaData <TABLE border=0 cellPadding=1 width="80%">
+23 silly fetchPackageMetaData <TR><TD>
+23 silly fetchPackageMetaData <FONT face="Helvetica">
+23 silly fetchPackageMetaData <big>Access Denied (authentication_failed)</big>
+23 silly fetchPackageMetaData <BR>
+23 silly fetchPackageMetaData <BR>
+23 silly fetchPackageMetaData </FONT>
+23 silly fetchPackageMetaData </TD></TR>
+23 silly fetchPackageMetaData <TR><TD>
+23 silly fetchPackageMetaData <FONT face="Helvetica">
+23 silly fetchPackageMetaData Your credentials could not be authenticated: "Credentials are missing.". You will not be permitted access until your credentials can be verified.
+23 silly fetchPackageMetaData </FONT>
+23 silly fetchPackageMetaData </TD></TR>
+23 silly fetchPackageMetaData <TR><TD>
+23 silly fetchPackageMetaData <FONT face="Helvetica">
+23 silly fetchPackageMetaData This is typically caused by an incorrect username and/or password, but could also be caused by network problems.
+23 silly fetchPackageMetaData </FONT>
+23 silly fetchPackageMetaData </TD></TR>
+23 silly fetchPackageMetaData <TR><TD>
+23 silly fetchPackageMetaData <FONT face="Helvetica" SIZE=2>
+23 silly fetchPackageMetaData <BR>
+23 silly fetchPackageMetaData For assistance, contact your network support team.<br><br>Your request was categorized by Blue Coat Web Filter as 'Technology/Internet'. <br>If you wish to question or dispute this result, please click <a href="http://sitereview.bluecoat.com/sitereview.jsp?referrer=136&url=http://registry.npmjs.org/grunt-check-pages">here</a>.
+23 silly fetchPackageMetaData </FONT>
+23 silly fetchPackageMetaData </TD></TR>
+23 silly fetchPackageMetaData </TABLE>
+23 silly fetchPackageMetaData </blockquote>
+23 silly fetchPackageMetaData </FONT>
+23 silly fetchPackageMetaData </BODY></HTML>
+23 silly fetchPackageMetaData
+23 silly fetchPackageMetaData     at Object.parse (native)
+23 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:199:23)
+23 silly fetchPackageMetaData     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+23 silly fetchPackageMetaData     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:199:22)
+23 silly fetchPackageMetaData     at Request.emit (events.js:98:17)
+23 silly fetchPackageMetaData     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+23 silly fetchPackageMetaData     at Request.emit (events.js:117:20)
+23 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:963:12)
+23 silly fetchPackageMetaData     at IncomingMessage.emit (events.js:117:20)
+23 silly fetchPackageMetaData     at _stream_readable.js:944:16
+23 silly fetchPackageMetaData  error for grunt-check-pages [SyntaxError: Unexpected token <
+23 silly fetchPackageMetaData <HTML><HEAD>
+23 silly fetchPackageMetaData <TITLE>Access Denied</TITLE>
+23 silly fetchPackageMetaData </HEAD>
+23 silly fetchPackageMetaData <BODY>
+23 silly fetchPackageMetaData <FONT face="Helvetica">
+23 silly fetchPackageMetaData <big><strong></strong></big><BR>
+23 silly fetchPackageMetaData </FONT>
+23 silly fetchPackageMetaData <blockquote>
+23 silly fetchPackageMetaData <TABLE border=0 cellPadding=1 width="80%">
+23 silly fetchPackageMetaData <TR><TD>
+23 silly fetchPackageMetaData <FONT face="Helvetica">
+23 silly fetchPackageMetaData <big>Access Denied (authentication_failed)</big>
+23 silly fetchPackageMetaData <BR>
+23 silly fetchPackageMetaData <BR>
+23 silly fetchPackageMetaData </FONT>
+23 silly fetchPackageMetaData </TD></TR>
+23 silly fetchPackageMetaData <TR><TD>
+23 silly fetchPackageMetaData <FONT face="Helvetica">
+23 silly fetchPackageMetaData Your credentials could not be authenticated: "Credentials are missing.". You will not be permitted access until your credentials can be verified.
+23 silly fetchPackageMetaData </FONT>
+23 silly fetchPackageMetaData </TD></TR>
+23 silly fetchPackageMetaData <TR><TD>
+23 silly fetchPackageMetaData <FONT face="Helvetica">
+23 silly fetchPackageMetaData This is typically caused by an incorrect username and/or password, but could also be caused by network problems.
+23 silly fetchPackageMetaData </FONT>
+23 silly fetchPackageMetaData </TD></TR>
+23 silly fetchPackageMetaData <TR><TD>
+23 silly fetchPackageMetaData <FONT face="Helvetica" SIZE=2>
+23 silly fetchPackageMetaData <BR>
+23 silly fetchPackageMetaData For assistance, contact your network support team.<br><br>Your request was categorized by Blue Coat Web Filter as 'Technology/Internet'. <br>If you wish to question or dispute this result, please click <a href="http://sitereview.bluecoat.com/sitereview.jsp?referrer=136&url=http://registry.npmjs.org/grunt-check-pages">here</a>.
+23 silly fetchPackageMetaData </FONT>
+23 silly fetchPackageMetaData </TD></TR>
+23 silly fetchPackageMetaData </TABLE>
+23 silly fetchPackageMetaData </blockquote>
+23 silly fetchPackageMetaData </FONT>
+23 silly fetchPackageMetaData </BODY></HTML>
+23 silly fetchPackageMetaData ]
+24 silly rollbackFailedOptional Starting
+25 silly rollbackFailedOptional Finishing
+26 silly runTopLevelLifecycles Starting
+27 silly runTopLevelLifecycles Finishing
+28 silly install printInstalled
+29 verbose type unexpected_token
+30 verbose stack SyntaxError: Unexpected token <
+30 verbose stack <HTML><HEAD>
+30 verbose stack <TITLE>Access Denied</TITLE>
+30 verbose stack </HEAD>
+30 verbose stack <BODY>
+30 verbose stack <FONT face="Helvetica">
+30 verbose stack <big><strong></strong></big><BR>
+30 verbose stack </FONT>
+30 verbose stack <blockquote>
+30 verbose stack <TABLE border=0 cellPadding=1 width="80%">
+30 verbose stack <TR><TD>
+30 verbose stack <FONT face="Helvetica">
+30 verbose stack <big>Access Denied (authentication_failed)</big>
+30 verbose stack <BR>
+30 verbose stack <BR>
+30 verbose stack </FONT>
+30 verbose stack </TD></TR>
+30 verbose stack <TR><TD>
+30 verbose stack <FONT face="Helvetica">
+30 verbose stack Your credentials could not be authenticated: "Credentials are missing.". You will not be permitted access until your credentials can be verified.
+30 verbose stack </FONT>
+30 verbose stack </TD></TR>
+30 verbose stack <TR><TD>
+30 verbose stack <FONT face="Helvetica">
+30 verbose stack This is typically caused by an incorrect username and/or password, but could also be caused by network problems.
+30 verbose stack </FONT>
+30 verbose stack </TD></TR>
+30 verbose stack <TR><TD>
+30 verbose stack <FONT face="Helvetica" SIZE=2>
+30 verbose stack <BR>
+30 verbose stack For assistance, contact your network support team.<br><br>Your request was categorized by Blue Coat Web Filter as 'Technology/Internet'. <br>If you wish to question or dispute this result, please click <a href="http://sitereview.bluecoat.com/sitereview.jsp?referrer=136&url=http://registry.npmjs.org/grunt-check-pages">here</a>.
+30 verbose stack </FONT>
+30 verbose stack </TD></TR>
+30 verbose stack </TABLE>
+30 verbose stack </blockquote>
+30 verbose stack </FONT>
+30 verbose stack </BODY></HTML>
+30 verbose stack
+30 verbose stack     at Object.parse (native)
+30 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:199:23)
+30 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+30 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:199:22)
+30 verbose stack     at Request.emit (events.js:98:17)
+30 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+30 verbose stack     at Request.emit (events.js:117:20)
+30 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:963:12)
+30 verbose stack     at IncomingMessage.emit (events.js:117:20)
+30 verbose stack     at _stream_readable.js:944:16
+31 verbose cwd /Users/coreywynn/Sites/molex_careers
+32 error Darwin 15.2.0
+33 error argv "node" "/usr/local/bin/npm" "install" "grunt-check-pages" "--save-dev"
+34 error node v0.10.36
+35 error npm  v3.8.0
+36 error Unexpected token <
+36 error <HTML><HEAD>
+36 error <TITLE>Access Denied</TITLE>
+36 error </HEAD>
+36 error <BODY>
+36 error <FONT face="Helvetica">
+36 error <big><strong></strong></big><BR>
+36 error </FONT>
+36 error <blockquote>
+36 error <TABLE border=0 cellPadding=1 width="80%">
+36 error <TR><TD>
+36 error <FONT face="Helvetica">
+36 error <big>Access Denied (authentication_failed)</big>
+36 error <BR>
+36 error <BR>
+36 error </FONT>
+36 error </TD></TR>
+36 error <TR><TD>
+36 error <FONT face="Helvetica">
+36 error Your credentials could not be authenticated: "Credentials are missing.". You will not be permitted access until your credentials can be verified.
+36 error </FONT>
+36 error </TD></TR>
+36 error <TR><TD>
+36 error <FONT face="Helvetica">
+36 error This is typically caused by an incorrect username and/or password, but could also be caused by network problems.
+36 error </FONT>
+36 error </TD></TR>
+36 error <TR><TD>
+36 error <FONT face="Helvetica" SIZE=2>
+36 error <BR>
+36 error For assistance, contact your network support team.<br><br>Your request was categorized by Blue Coat Web Filter as 'Technology/Internet'. <br>If you wish to question or dispute this result, please click <a href="http://sitereview.bluecoat.com/sitereview.jsp?referrer=136&url=http://registry.npmjs.org/grunt-check-pages">here</a>.
+36 error </FONT>
+36 error </TD></TR>
+36 error </TABLE>
+36 error </blockquote>
+36 error </FONT>
+36 error </BODY></HTML>
+37 error If you need help, you may report this error at:
+37 error     <https://github.com/npm/npm/issues>
+38 verbose exit [ 1, true ]
