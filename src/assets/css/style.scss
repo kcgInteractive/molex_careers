@@ -74,12 +74,8 @@
       -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
       color: white;
       display: block;
-      width: 100%;
       text-decoration: none;
-      left: 2rem;
-      right: 2rem;
       z-index: 3;
-      padding: 0 20px;
 
       .red_button { margin-right: .5rem; }
     } //overlay-text
@@ -90,7 +86,6 @@
       height: 350px;
       padding: 70px 0px;
       h1 {
-        width: 70%;
         margin-top: 0;
         margin-bottom: 20px;
         font-size: 36px;
@@ -117,7 +112,6 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 960px;
         height: 350px;
       } //overlay
     } //#top-banner
@@ -374,7 +368,7 @@
   } //intro_container
 
   .stats_container {
-    padding: 2.5rem 2rem;
+    padding: 2.5rem 0;
     text-align: center;
     .stats {
       margin-top: 1.25rem;
@@ -394,14 +388,20 @@
       }
       .college_stat {
         display: inline-block;
-        width: 33%;
         padding: 0 .5%;
         vertical-align: top;
+        &:first-child {
+          text-align: left;
+        }
+        &:last-child {
+          text-align: right;
+        }
         img {
           width: auto;
         }
         &.sr_leader {
           margin-top: 10px;
+          text-align: left;
         }
         &.schools {}
         &.interns {
@@ -542,12 +542,7 @@
     .spotlight_copy {
       position: absolute;
       top: 50%;
-      right: 2rem;
-      left: 50%;
       @include transform( translateY(-50%) );
-      &.right { right: 2rem; }
-      &.left { left: 2rem; }
-
       .hollow_button {
         margin-bottom: 1.5rem;
       }
@@ -555,7 +550,7 @@
   } //spotlight_container
 
   .faq_container {
-    padding: 3.15rem 2rem;
+    padding: 3.15rem 0;
     h2 {
       margin-bottom: 2rem;
       text-align: center;
