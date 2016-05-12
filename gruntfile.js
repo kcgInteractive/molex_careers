@@ -25,8 +25,7 @@ module.exports = function(grunt) {
           },
             files: {
               'dist/assets/css/style.css': 'src/assets/css/style.scss',
-              'dist/assets/css/style_mobile.css': 'src/assets/css/style_mobile.scss',
-              'dist/assets/css/bootstrap.css': 'src/assets/css/bootstrap.css'
+              'dist/assets/css/style_mobile.css': 'src/assets/css/style_mobile.scss'
             }
         }
     },

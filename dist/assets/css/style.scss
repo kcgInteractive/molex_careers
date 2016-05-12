@@ -139,7 +139,7 @@
     margin-bottom: 20px;
   }
   h2 {
-    margin: 0 0 .5rem 0;
+    margin: 0 0 1.15rem 0!important;
     color: $red;
     font-family: verdana, sans-serif;
     font-size: 1.3125rem;
@@ -193,6 +193,10 @@
       text-decoration: none;
     }
   } //a
+  ul {
+    padding: 0;
+    margin: 0;
+  }
   
   .red {
     color: $red;
@@ -267,12 +271,14 @@
   .hollow_button {
     position: relative;
     display: inline-block;
-    padding: .4rem 2rem;
-    color: $white;
+    padding: .5rem 1.15rem;
+    color: $red;
     font-family: arial, sans-serif;
     font-size: .75rem;
+    font-weight: 600;
     text-transform: uppercase;
     text-shadow: none;
+    line-height: 1;
     border-radius: .15rem;
     border: 1px solid $red;
   }
@@ -310,14 +316,14 @@
     p {
       margin: 0;
       font-family: 'Droid Serif', serif;
-      font-size: 1.125rem;
+      font-size: .9rem;
       font-style: italic;
       color: $white;
     }
     span.quote_reference {
       display: inline-block;
-      padding: 1rem 0;
-      font-size: .9375rem;
+      padding: .75rem 0;
+      font-size: .9rem;
       font-weight: 500;
       font-family: sans-serif;
       color: $white;
@@ -359,7 +365,7 @@
 
     .right {
       position: relative;
-      padding: 2rem 2rem 0rem 1rem;
+      padding: 1.2rem 3rem 0rem 1rem;
     }
 
     .offset_top {
@@ -390,16 +396,23 @@
         display: inline-block;
         width: 33%;
         padding: 0 .5%;
-        vertical-align: bottom;
+        vertical-align: top;
         img {
           width: auto;
+        }
+        &.sr_leader {
+          margin-top: 10px;
+        }
+        &.schools {}
+        &.interns {
+          margin-top: 26px;
         }
       }
     }
   } //stats_container
 
   .testimonials_container {
-    padding: 0;
+    padding: 0!important;
     height: 100%;
 
     .careers_testimonial_1 {
@@ -438,7 +451,7 @@
         position: absolute;
         width: 100.5%;
         height: 100.5%;
-        background: url(../images/careers_testimonials_image_2.jpg) no-repeat center center;
+        background: url(../images/careers_testimonials_image_2.jpg) no-repeat right center;
         background-size: cover;
       }
       .testimonial_copy {
@@ -475,27 +488,22 @@
       }
     } //careers_testimonial_3
 
-    .college_testimonial_1 {
+    .college_testimonial_quote {
       position: relative;
       height: 17.5rem;
       padding: 0;
-      .college_testimonial_bg_image {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: url(../images/college_testimonial_image_1.jpg) no-repeat center center;
-        background-size: cover;
-      }
+      background: $red;
       .college_testimonial_copy {
         position: absolute;
         top: 50%;
-        right: 2rem;
+        width: 100%;
+        padding: 2rem;
         text-align: center;
         @include transform( translateY(-50%) );
       }
     } //college_testimonial_1
 
-    .college_testimonial_2 {
+    .college_testimonial_image {
       position: relative;
       height: 17.5rem;
       padding: 0;
@@ -505,13 +513,6 @@
         height: 100%;
         background: url(../images/college_testimonial_image_2.jpg) no-repeat center center;
         background-size: cover;
-      }
-      .college_testimonial_copy {
-        position: absolute;
-        top: 50%;
-        left: 2rem;
-        text-align: center;
-        @include transform( translateY(-50%) );
       }
     } //college_testimonial_2
   } //testimonials_container
@@ -698,5 +699,34 @@
     } //social_container
   } //search_results_container
 ///// END SEARCH RESULTS CONTAINER /////
+
+
+
+
+
+///// CAREERS FOOTER /////
+  .careers_footer {
+    width: 960px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: left;
+    background: $white;
+    li {
+      display: inline-block;
+      padding-right: 1rem;
+      a {
+        color: $red;
+        font-size: .75rem;
+      }
+    }
+    .careers_disclaimer {
+      padding: .75rem 0 0 0;
+      font-size: .75rem;
+      a {
+        color: $red;
+      }
+    }
+  }
+///// END CAREERS FOOTER /////
   
   } //newmolex
