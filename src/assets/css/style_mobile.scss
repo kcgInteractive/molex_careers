@@ -13,7 +13,7 @@
 /*--COLORS--*/
   $red: #E30536;
   $white: #ffffff;
-  $dark_gray: #444444;
+  $dark-gray: #444444;
   $light_gray: #F3F3F3;
 /*--END COLORS--*/
 
@@ -60,7 +60,6 @@
     .container {
       overflow: auto;
       background-color: white;
-      padding: 20px 44px;
       margin: 0 auto;
       width: 100% !important;
       position: relative;
@@ -72,14 +71,12 @@
       z-index: 3;
       opacity: 1;
       width: 100%;
-      top: 50%;
       left: 0;
       right: 0;
       padding: 0 2rem;
       color: white;
       text-shadow: 1px 1px 1px #000;
       text-decoration: none;
-      @include transform( translateY(-50%) );
       -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     } //overlay-text
 
@@ -102,11 +99,11 @@
         right: 0;
         bottom: 0;
         left: 0;
-        &.mobile_careers_header {
+        &.mobile-careers-header {
           background: url(../images/careers_header_1600.jpg) no-repeat right top;
           background-size: cover;
         }
-        &.mobile_college_header {
+        &.mobile-college-header {
           background: url(../images/college_header_1600.jpg) no-repeat right top;
           background-size: cover;
         }
@@ -139,17 +136,6 @@
 
 
 
-///// CUSTOM BOOSTRAP /////
-  .col-xs-9, .col-xs-8, .col-xs-6, .col-xs-4 {
-    width: 100%;
-    padding: 0;
-  }
-///// END CUSTOM BOOTSTRAP /////
-
-
-
-
-
 ///// KCG CUSTOM STYLING /////
   h1 {
     text-transform: uppercase;
@@ -171,7 +157,7 @@
   }
   h3 {
     margin: 0 0 .5rem 0;
-    color: $dark_gray;
+    color: $dark-gray;
     font-size: 1.3125rem;
     font-weight: 600;
     line-height: 1.1;
@@ -194,7 +180,7 @@
   }
   h6 {
     margin: 0 0 .25rem 0;
-    color: $dark_gray;
+    color: $dark-gray;
     font-size: 1.175rem;
     font-family: verdana, sans-serif;
     font-weight: 600;
@@ -231,49 +217,60 @@
   .white {
     color: $white;
   }
-  .dark_gray {
-    color: $dark_gray;
+  .dark-gray {
+    color: $dark-gray;
   }
-  .light_gray {
+  .light-gray{
     color: $light_gray;
   }
-  .bg_red {
+  .bg-red {
     background: $red;
     color: $white!important;
     h1, h2, p {
       color: $white!important;
     }
   }
-  .bg_light_gray {
+  .bg-light-gray {
     background: $light_gray;
   }
-  .text_align_center {
+  .text-align-center {
     text-align: center;
   }
-  .center {
-    position: relative;
-    overflow: visible;
+  .text-align-left {
+    text-align: left;
+  }
+  .text-align-right {
+    text-align: right;
+  }
+  .h-center {
+    display: inline-block;
     float: none;
     margin: 0 auto;
-    text-align: center;
+    right: 0;
+    left: 0;
   }
-  .lg_padding {
+  .v-center {
+    position: absolute;
+    top: 50%;
+    @include transform( translateY(-50%) );
+  }
+  .lg-padding {
     padding: 2rem;
   }
-  .text_shadow {
+  .text-shadow {
     text-shadow: 1px 1px 1px #000;
   }
-  .inset_box_shadow_top {
+  .inset-box-shadow-top {
     -moz-box-shadow:    inset  0  10px 10px -10px rgba(0,0,0,.25);
     -webkit-box-shadow: inset  0  10px 10px -10px rgba(0,0,0,.25);
      box-shadow:        inset  0  10px 10px -10px rgba(0,0,0,.25);
   }
-  .inset_box_shadow_bottom {
+  .inset-box-shadow-bottom {
     -moz-box-shadow:    inset  0 -10px 10px -10px rgba(0,0,0,.25);
     -webkit-box-shadow: inset  0 -10px 10px -10px rgba(0,0,0,.25);
      box-shadow:        inset  0 -10px 10px -10px rgba(0,0,0,.25);
   }
-  .gray_white_grad_bottom {
+  .gray-white-grad-bottom {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+40,d8d8d8+100 */
     background: #ffffff; /* Old browsers */
     background: -moz-linear-gradient(top, #ffffff 40%, #d8d8d8 100%); /* FF3.6-15 */
@@ -281,7 +278,7 @@
     background: linear-gradient(to bottom, #ffffff 40%,#d8d8d8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d8d8d8',GradientType=0 ); /* IE6-9 */
   }
-  .gray_white_grad_top {
+  .gray-white-grad-top {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d8d8d8+0,ffffff+60 */
     background: #d8d8d8; /* Old browsers */
     background: -moz-linear-gradient(top, #d8d8d8 0%, #ffffff 60%); /* FF3.6-15 */
@@ -290,7 +287,7 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8d8d8', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
   }
 
-  .hollow_button {
+  .hollow-btn {
     position: relative;
     display: inline-block;
     padding: .5rem 1.15rem;
@@ -303,8 +300,12 @@
     line-height: 1;
     border-radius: .15rem;
     border: 1px solid $red;
+    &:hover {
+      background: $red;
+      color: $white;
+    }
   }
-  .red_button {
+  .red-btn {
     position: relative;
     display: inline-block;
     padding: .75rem 1.15rem;
@@ -316,11 +317,15 @@
     text-shadow: none;
     background: $red;
     border-radius: .2rem;
+    &:hover {
+      background: $red;
+      color: $white;
+    }
     &.sm {
       padding: .4rem 2rem;
     }
   }
-  .text_link {
+  .text-link {
     display: inline-block;
     color: $red;
     font-size: 12px;
@@ -340,7 +345,7 @@
       text-shadow: 1px 1px 1px #000;
       letter-spacing: .75px;
     }
-    span.quote_reference {
+    span.quote-reference {
       display: inline-block;
       padding: 1rem 0;
       font-size: .8rem;
@@ -348,7 +353,7 @@
       font-family: sans-serif;
       color: $white;
     }
-    .quote_seperator {
+    .quote-seperator {
       display: block;
       width: 5rem;
       margin: 1.1rem auto 0 auto;
@@ -357,10 +362,12 @@
   } //quote
   .video-container {
     position: relative;
-    background:#e9e9e9;
     width: 100%;
     height: 15rem;
-    .red_play_button {
+    margin: 0 0 1rem 0;
+    background: url('../images/careers_video_thumb.jpg') bottom left no-repeat;
+    background-size: cover;
+    .red-play-button {
       position: absolute;
       z-index: 1;
       top: 50%;
@@ -368,60 +375,43 @@
       left: 0;
       margin: 0 auto;
       @include transform( translateY(-50%) );
+      cursor: pointer;
     }
   } //video-container 
 
-  .intro_container {
+  .intro-container {
     overflow: auto;
-    padding: 2rem;
+    padding: 2rem 1rem;
     z-index: 10;
-  
-    .left {
-      position: relative;
-      overflow: visible;
-      padding: 0 0 1rem 0;
-    }
-
-    .right {
-      position: relative;
-      padding: 0;
-    }
   } //intro_container
-
-  .stats_container {
-    text-align: center;
-    .stats {
-      img {
-        display: block;
-        margin: 1rem auto;
-        padding: 1rem 0;
-      }
+  
+  .stats-container {
+    padding: 2rem 0;
+    img {
+      margin: 1rem 0;
     }
+  }
 
-  } //stats_container
 
-  .testimonials_container {
+  .testimonials-container {
+    overflow: hidden;
     padding: 0;
     height: 100%;
 
-    .careers_testimonial_1 {
+    .careers-testimonial-1 {
       position: relative;
       height: 26rem;
       padding: 0;
-      .testimonial_bg_image {
+      .testimonial-bg-image {
         position: absolute;
         width: 100%;
         height: 100%;
         background: url(../images/careers_testimonials_image_1.jpg) no-repeat center center;
         background-size: cover;
       }
-      .testimonial_copy {
+      .testimonial-copy {
         position: absolute;
         bottom: 2rem;
-        right: 2rem;
-        left: 2rem;
-        margin: 0 auto;
-        text-align: center;
         .button_intro {
           margin: 0;
           padding: 0 0 .5rem 0;
@@ -429,64 +419,55 @@
       }
     } //careers_testimonial_1
 
-    .careers_testimonial_2 {
+    .careers-testimonial-2 {
       position: relative;
-      height: 12.5rem;
+      height: 14.5rem;
       padding: 0;
-      .testimonial_bg_image {
+      .testimonial-bg-image {
         position: absolute;
         width: 100%;
         height: 100%;
         background: url(../images/careers_testimonials_image_2.jpg) no-repeat center center;
         background-size: cover;
       }
-      .testimonial_copy {
+      .testimonial-copy {
+        bottom: 2rem;
         position: absolute;
-        width: 50%;
-        top: 2rem;
-        right: 1rem;
-        text-align: center;
       }
     } //careers_testimonial_2
 
-    .careers_testimonial_3 {
+    .careers-testimonial-3 {
       position: relative;
-      height: 12.5rem;
+      height: 14.5rem;
       padding: 0;
-      .testimonial_bg_image {
+      .testimonial-bg-image {
         position: absolute;
         width: 100%;
         height: 100%;
         background: url(../images/careers_testimonials_image_3.jpg) no-repeat center center;
         background-size: cover;
       }
-      .testimonial_copy {
+      .testimonial-copy {
         position: absolute;
-        width: 50%;
-        bottom: 0rem;
         right: 1rem;
-        text-align: center;
       }
     } //careers_testimonial_3
 
-    .college_testimonial_quote {
+    .college-testimonial-quote {
       position: relative;
       height: auto;
       padding: 0;
       background: $red;
-      .college_testimonial_copy {
+      .college-testimonial-copy {
         position: relative;
-        width: 100%;
         padding: 2rem;
-        text-align: center;
       }
     } //college_testimonial_1
 
-    .college_testimonial_image {
+    .college-testimonial-image {
       position: relative;
-      height: 17.5rem;
-      padding: 0;
-      .college_testimonial_bg_image {
+      height: 14.5rem;
+      .college-testimonial-bg-image {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -496,11 +477,11 @@
     } //college_testimonial_2
   } //testimonials_container
 
-  .spotlight_container {
+  .spotlight-container {
     position: relative;
     padding: 0;
-    &.careers_spotlight {
-      .spotlight_bg_image {
+    &.careers-spotlight {
+      .spotlight-bg-image {
         position: relative;
         width: 100%;
         height: 12.5rem;
@@ -508,8 +489,8 @@
         background-size: cover;
       }
     }
-    &.college_spotlight {
-      .spotlight_bg_image {
+    &.college-spotlight {
+      .spotlight-bg-image {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -517,73 +498,46 @@
         background-size: cover;
       }
     }
-    .spotlight_copy {
+    .spotlight-copy {
       position: relative;
       width: 100%;
       padding: 2rem;
       text-align: center;
       background: black;
       color: $white;
-      .hollow_button {
+      .hollow-btn {
         margin-bottom: 1rem;
       }
     }
   } //spotlight_container
 
-  .faq_container {
+  .faq-container {
     padding: 2rem;
     h4 {
       margin-bottom: 2rem;
       text-align: center;
     }
-    .col-xs-4 {
+    .col-xs-12 {
       margin: .5rem 0;
     }
   } //faq_container
 
-  .jobs_info_container {
-    padding: 0;
-    p { margin: 0; }
-    .col-xs-6 {
-      position: relative;
-      padding: 2rem;
-    }
-    .jobs_search_cta_image {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background: url(../images/jobs_search_image_1.jpg) no-repeat top center;
-      background-size: cover;
-    }
-    .jobs_search_cta_copy {
-      position: relative;
-      text-align: center;
-      padding: 7rem 0 0 0;
-    }
-  } //job_info_container
-
-  .join_our_team_container {
+  .join-our-team-container {
     position: relative;
     height: 12.5rem;
     width: 100%;
     background: url(../images/careers_join_team_image.jpg) no-repeat top center;
     background-size: cover;
-    .join_our_team_cta {
+    .join-our-team-cta {
       position: absolute;
-      right: 0;
-      left: 0;
       bottom: 1rem;
-      margin: 0 auto;
-      text-align: center;
-      .red_button {
+      .red-btn {
         margin-right: .5rem;
       }
     }
   } //join_our_team_container
 
-  .college_support_image {
+  .college-support-image {
     height: 10rem;
     width: 100%;
     margin: 0 auto;
@@ -597,85 +551,85 @@
 
 
 ///// SEARCH RESULTS PAGE /////
-  .search_results_container {
-    overflow: auto;
-    width: 100%;
-    margin: 0 auto;
+//   .search_results_container {
+//     overflow: auto;
+//     width: 100%;
+//     margin: 0 auto;
 
-    .job_search_container {
-      padding: 2rem;
-    }
+//     .job_search_container {
+//       padding: 2rem;
+//     }
 
-    .search_results_intro {
-      padding: 0 2rem;
-      span {
-        display: block;
-        font-family: sans-serif;
-        color: $dark_gray;
-        font-weight: 1rem;
-      }
-      span.job_title {
-        display: block;
-        font-family: sans-serif;
-        color: $red;
-        font-size: 1.65rem;
-      }
-    } //search_results_intro
+//     .search_results_intro {
+//       padding: 0 2rem;
+//       span {
+//         display: block;
+//         font-family: sans-serif;
+//         color: $dark-gray;
+//         font-weight: 1rem;
+//       }
+//       span.job_title {
+//         display: block;
+//         font-family: sans-serif;
+//         color: $red;
+//         font-size: 1.65rem;
+//       }
+//     } //search_results_intro
 
-    .search_results_list {
-      padding: 2rem 0;
-    } //search_results_list
+//     .search_results_list {
+//       padding: 2rem 0;
+//     } //search_results_list
     
-    .search_result {
-      padding: 2rem;
-      border-top: 1px solid $dark_gray;
-      .job_title {
-        display: block;
-        margin: 0 0 .5rem 0;
-        color: $dark_gray;
-        font-size: 1.175rem;
-        font-weight: 400;
-      } //job_title
-      .job_info {
-        display: block;
-        margin: 0 0 .5rem 0;
-        span {
-          display: inline-block;
-          padding: 0 0 0 .25rem;
-          margin: 0 0 0 .25rem;
-          color: $dark_gray;
-          font-size: .75rem;
-          font-weight: 700;
-          border-left: 2px solid $dark_gray;
-          &:first-child {
-            padding: 0;
-            margin: 0;
-            border-left: none;
-          }
-        }
-      } //job_info
-    } //search_result
+//     .search_result {
+//       padding: 2rem;
+//       border-top: 1px solid $dark-gray;
+//       .job_title {
+//         display: block;
+//         margin: 0 0 .5rem 0;
+//         color: $dark-gray;
+//         font-size: 1.175rem;
+//         font-weight: 400;
+//       } //job_title
+//       .job_info {
+//         display: block;
+//         margin: 0 0 .5rem 0;
+//         span {
+//           display: inline-block;
+//           padding: 0 0 0 .25rem;
+//           margin: 0 0 0 .25rem;
+//           color: $dark-gray;
+//           font-size: .75rem;
+//           font-weight: 700;
+//           border-left: 2px solid $dark-gray;
+//           &:first-child {
+//             padding: 0;
+//             margin: 0;
+//             border-left: none;
+//           }
+//         }
+//       } //job_info
+//     } //search_result
 
-    .social_container {
-      text-align: center;
-      .social_title {
-        display: block;
-        margin: 0 0 .5rem 0;
-        color: $dark_gray;
-        font-size: .875rem;
-        font-weight: 700;
-      }
-      .social_icons {
-        padding: .5rem 0;
-        margin: .25rem 0 0 0;
-        border-top: 1px solid $dark_gray;
-        border-bottom: 1px solid $dark_gray;
-        img {
-          padding: 0 .25rem;
-        }
-      }
-    } //social_container
-  } //search_results_container
+//     .social_container {
+//       text-align: center;
+//       .social_title {
+//         display: block;
+//         margin: 0 0 .5rem 0;
+//         color: $dark-gray;
+//         font-size: .875rem;
+//         font-weight: 700;
+//       }
+//       .social_icons {
+//         padding: .5rem 0;
+//         margin: .25rem 0 0 0;
+//         border-top: 1px solid $dark-gray;
+//         border-bottom: 1px solid $dark-gray;
+//         img {
+//           padding: 0 .25rem;
+//         }
+//       }
+//     } //social_container
+//   } //search_results_container
 ///// END SEARCH RESULTS PAGE /////
 
 
@@ -683,12 +637,11 @@
 
 
 ///// CAREERS FOOTER /////
-  .careers_footer {
-    width: 100%;
-    margin: 0 auto;
-    padding: 2rem;
-    text-align: left;
-    background: $white;
+  .careers-footer {
+    padding: 2rem 1rem;
+    .careers-footer-links {
+      padding: 0 2rem;
+    }
     li {
       display: block;
       padding: 0 0 1rem 0;
@@ -697,16 +650,94 @@
         font-size: .75rem;
       }
     }
-    .careers_disclaimer {
-      padding: .75rem 0 0 0;
+    .careers-disclaimer {
+      padding: 0 2rem;
       font-size: .75rem;
       a {
         color: $red;
       }
     }
   }
-///// END CAREERS FOOTER /////
+///// END CAREERS FOOTER /////  
+} //newmolex
 
 
-  
-  } //newmolex
+
+///// FULL SCREEN VIDEO /////
+  .close_icon, .close_button {
+    position: absolute;
+    z-index: 1201;
+    height:1.5625rem;
+    width: 1.5625rem;
+    top: 1rem;
+    right: 2.25rem;
+    cursor: pointer;
+    &.light {
+      color: $white;
+      div {
+        height:1.5625rem;
+        width: 1.5625rem;
+        &:before, &:after {
+          background-color: $white;
+        }
+      }
+    } //&.light
+    &.dark {
+      color: $dark_gray;
+      div {
+        height:1.5625rem;
+        width: 1.5625rem;
+        &:before, &:after {
+          background-color: $dark_gray;
+        }
+      }
+    } //&.dark
+
+    div {
+      position: absolute;
+      top: 40%;
+      width: 100%;
+      &::before, &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        height: .1875rem;
+        width: 105%;
+      }
+      &::before {
+        @include transform (rotate(-225deg));      
+      }
+      &::after {
+        @include transform (rotate(225deg));
+      }
+    } //div
+  } //close_icon
+  .full_screen_video_container {
+    display: none;
+    position: fixed;
+    z-index: 1200;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba( 0, 0, 0, .75);
+    .video {
+      position: absolute;
+      max-width: 112.5rem; //1800px
+      max-height: 63rem;
+      width: 90%;
+      height: 90%;
+      right: 0;
+      left: 0;
+      top: 50%;    
+      margin: 0 auto;
+      @include transform( translateY(-50%) );
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+    } //iframe
+    .close_button {}
+  } //feature_video_container
+///// END FULL SCREEN VIDEO /////

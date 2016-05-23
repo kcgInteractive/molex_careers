@@ -55,7 +55,7 @@ module.exports = function(grunt) {
     // Watch these files and run 'on-change'
     watch: {
       css: {
-        files: ['src/assets/css/*.scss'],
+        files: ['src/assets/css/*.scss', 'src/assets/css/style.scss'],
         tasks: ['newer:sass:build']
       },
 

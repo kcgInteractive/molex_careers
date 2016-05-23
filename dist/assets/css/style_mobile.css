@@ -236,7 +236,6 @@ body {
   .newmolex .container {
     overflow: auto;
     background-color: white;
-    padding: 20px 44px;
     margin: 0 auto;
     width: 100% !important;
     position: relative; }
@@ -246,18 +245,12 @@ body {
     z-index: 3;
     opacity: 1;
     width: 100%;
-    top: 50%;
     left: 0;
     right: 0;
     padding: 0 2rem;
     color: white;
     text-shadow: 1px 1px 1px #000;
     text-decoration: none;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; }
   .newmolex #top-banner {
     overflow: hidden;
@@ -276,10 +269,10 @@ body {
       right: 0;
       bottom: 0;
       left: 0; }
-      .newmolex #top-banner .bg-image.mobile_careers_header {
+      .newmolex #top-banner .bg-image.mobile-careers-header {
         background: url(../images/careers_header_1600.jpg) no-repeat right top;
         background-size: cover; }
-      .newmolex #top-banner .bg-image.mobile_college_header {
+      .newmolex #top-banner .bg-image.mobile-college-header {
         background: url(../images/college_header_1600.jpg) no-repeat right top;
         background-size: cover; }
       .newmolex #top-banner .bg-image img {
@@ -298,9 +291,6 @@ body {
       left: 0;
       width: 100%;
       height: 250px; }
-  .newmolex .col-xs-9, .newmolex .col-xs-8, .newmolex .col-xs-6, .newmolex .col-xs-4 {
-    width: 100%;
-    padding: 0; }
   .newmolex h1 {
     text-transform: uppercase;
     margin-top: 0;
@@ -366,38 +356,50 @@ body {
     color: #E30536; }
   .newmolex .white {
     color: #ffffff; }
-  .newmolex .dark_gray {
+  .newmolex .dark-gray {
     color: #444444; }
-  .newmolex .light_gray {
+  .newmolex .light-gray {
     color: #F3F3F3; }
-  .newmolex .bg_red {
+  .newmolex .bg-red {
     background: #E30536;
     color: #ffffff !important; }
-    .newmolex .bg_red h1, .newmolex .bg_red h2, .newmolex .bg_red p {
+    .newmolex .bg-red h1, .newmolex .bg-red h2, .newmolex .bg-red p {
       color: #ffffff !important; }
-  .newmolex .bg_light_gray {
+  .newmolex .bg-light-gray {
     background: #F3F3F3; }
-  .newmolex .text_align_center {
+  .newmolex .text-align-center {
     text-align: center; }
-  .newmolex .center {
-    position: relative;
-    overflow: visible;
+  .newmolex .text-align-left {
+    text-align: left; }
+  .newmolex .text-align-right {
+    text-align: right; }
+  .newmolex .h-center {
+    display: inline-block;
     float: none;
     margin: 0 auto;
-    text-align: center; }
-  .newmolex .lg_padding {
+    right: 0;
+    left: 0; }
+  .newmolex .v-center {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%); }
+  .newmolex .lg-padding {
     padding: 2rem; }
-  .newmolex .text_shadow {
+  .newmolex .text-shadow {
     text-shadow: 1px 1px 1px #000; }
-  .newmolex .inset_box_shadow_top {
+  .newmolex .inset-box-shadow-top {
     -moz-box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.25);
     -webkit-box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.25);
     box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.25); }
-  .newmolex .inset_box_shadow_bottom {
+  .newmolex .inset-box-shadow-bottom {
     -moz-box-shadow: inset 0 -10px 10px -10px rgba(0, 0, 0, 0.25);
     -webkit-box-shadow: inset 0 -10px 10px -10px rgba(0, 0, 0, 0.25);
     box-shadow: inset 0 -10px 10px -10px rgba(0, 0, 0, 0.25); }
-  .newmolex .gray_white_grad_bottom {
+  .newmolex .gray-white-grad-bottom {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+40,d8d8d8+100 */
     background: #ffffff;
     /* Old browsers */
@@ -409,7 +411,7 @@ body {
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d8d8d8',GradientType=0 );
     /* IE6-9 */ }
-  .newmolex .gray_white_grad_top {
+  .newmolex .gray-white-grad-top {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d8d8d8+0,ffffff+60 */
     background: #d8d8d8;
     /* Old browsers */
@@ -421,7 +423,7 @@ body {
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8d8d8', endColorstr='#ffffff',GradientType=0 );
     /* IE6-9 */ }
-  .newmolex .hollow_button {
+  .newmolex .hollow-btn {
     position: relative;
     display: inline-block;
     padding: .5rem 1.15rem;
@@ -434,7 +436,10 @@ body {
     line-height: 1;
     border-radius: .15rem;
     border: 1px solid #E30536; }
-  .newmolex .red_button {
+    .newmolex .hollow-btn:hover {
+      background: #E30536;
+      color: #ffffff; }
+  .newmolex .red-btn {
     position: relative;
     display: inline-block;
     padding: .75rem 1.15rem;
@@ -446,9 +451,12 @@ body {
     text-shadow: none;
     background: #E30536;
     border-radius: .2rem; }
-    .newmolex .red_button.sm {
+    .newmolex .red-btn:hover {
+      background: #E30536;
+      color: #ffffff; }
+    .newmolex .red-btn.sm {
       padding: .4rem 2rem; }
-  .newmolex .text_link {
+  .newmolex .text-link {
     display: inline-block;
     color: #E30536;
     font-size: 12px;
@@ -465,24 +473,26 @@ body {
     color: #ffffff;
     text-shadow: 1px 1px 1px #000;
     letter-spacing: .75px; }
-  .newmolex .quote span.quote_reference {
+  .newmolex .quote span.quote-reference {
     display: inline-block;
     padding: 1rem 0;
     font-size: .8rem;
     font-weight: 500;
     font-family: sans-serif;
     color: #ffffff; }
-  .newmolex .quote .quote_seperator {
+  .newmolex .quote .quote-seperator {
     display: block;
     width: 5rem;
     margin: 1.1rem auto 0 auto;
     border-bottom: 0.1rem solid #ffffff; }
   .newmolex .video-container {
     position: relative;
-    background: #e9e9e9;
     width: 100%;
-    height: 15rem; }
-    .newmolex .video-container .red_play_button {
+    height: 15rem;
+    margin: 0 0 1rem 0;
+    background: url("../images/careers_video_thumb.jpg") bottom left no-repeat;
+    background-size: cover; }
+    .newmolex .video-container .red-play-button {
       position: absolute;
       z-index: 1;
       top: 50%;
@@ -493,245 +503,215 @@ body {
       -moz-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
       -o-transform: translateY(-50%);
-      transform: translateY(-50%); }
-  .newmolex .intro_container {
+      transform: translateY(-50%);
+      cursor: pointer; }
+  .newmolex .intro-container {
     overflow: auto;
-    padding: 2rem;
+    padding: 2rem 1rem;
     z-index: 10; }
-    .newmolex .intro_container .left {
-      position: relative;
-      overflow: visible;
-      padding: 0 0 1rem 0; }
-    .newmolex .intro_container .right {
-      position: relative;
-      padding: 0; }
-  .newmolex .stats_container {
-    text-align: center; }
-    .newmolex .stats_container .stats img {
-      display: block;
-      margin: 1rem auto;
-      padding: 1rem 0; }
-  .newmolex .testimonials_container {
+  .newmolex .stats-container {
+    padding: 2rem 0; }
+    .newmolex .stats-container img {
+      margin: 1rem 0; }
+  .newmolex .testimonials-container {
+    overflow: hidden;
     padding: 0;
     height: 100%; }
-    .newmolex .testimonials_container .careers_testimonial_1 {
+    .newmolex .testimonials-container .careers-testimonial-1 {
       position: relative;
       height: 26rem;
       padding: 0; }
-      .newmolex .testimonials_container .careers_testimonial_1 .testimonial_bg_image {
+      .newmolex .testimonials-container .careers-testimonial-1 .testimonial-bg-image {
         position: absolute;
         width: 100%;
         height: 100%;
         background: url(../images/careers_testimonials_image_1.jpg) no-repeat center center;
         background-size: cover; }
-      .newmolex .testimonials_container .careers_testimonial_1 .testimonial_copy {
+      .newmolex .testimonials-container .careers-testimonial-1 .testimonial-copy {
         position: absolute;
-        bottom: 2rem;
-        right: 2rem;
-        left: 2rem;
-        margin: 0 auto;
-        text-align: center; }
-        .newmolex .testimonials_container .careers_testimonial_1 .testimonial_copy .button_intro {
+        bottom: 2rem; }
+        .newmolex .testimonials-container .careers-testimonial-1 .testimonial-copy .button_intro {
           margin: 0;
           padding: 0 0 .5rem 0; }
-    .newmolex .testimonials_container .careers_testimonial_2 {
+    .newmolex .testimonials-container .careers-testimonial-2 {
       position: relative;
-      height: 12.5rem;
+      height: 14.5rem;
       padding: 0; }
-      .newmolex .testimonials_container .careers_testimonial_2 .testimonial_bg_image {
+      .newmolex .testimonials-container .careers-testimonial-2 .testimonial-bg-image {
         position: absolute;
         width: 100%;
         height: 100%;
         background: url(../images/careers_testimonials_image_2.jpg) no-repeat center center;
         background-size: cover; }
-      .newmolex .testimonials_container .careers_testimonial_2 .testimonial_copy {
-        position: absolute;
-        width: 50%;
-        top: 2rem;
-        right: 1rem;
-        text-align: center; }
-    .newmolex .testimonials_container .careers_testimonial_3 {
+      .newmolex .testimonials-container .careers-testimonial-2 .testimonial-copy {
+        bottom: 2rem;
+        position: absolute; }
+    .newmolex .testimonials-container .careers-testimonial-3 {
       position: relative;
-      height: 12.5rem;
+      height: 14.5rem;
       padding: 0; }
-      .newmolex .testimonials_container .careers_testimonial_3 .testimonial_bg_image {
+      .newmolex .testimonials-container .careers-testimonial-3 .testimonial-bg-image {
         position: absolute;
         width: 100%;
         height: 100%;
         background: url(../images/careers_testimonials_image_3.jpg) no-repeat center center;
         background-size: cover; }
-      .newmolex .testimonials_container .careers_testimonial_3 .testimonial_copy {
+      .newmolex .testimonials-container .careers-testimonial-3 .testimonial-copy {
         position: absolute;
-        width: 50%;
-        bottom: 0rem;
-        right: 1rem;
-        text-align: center; }
-    .newmolex .testimonials_container .college_testimonial_quote {
+        right: 1rem; }
+    .newmolex .testimonials-container .college-testimonial-quote {
       position: relative;
       height: auto;
       padding: 0;
       background: #E30536; }
-      .newmolex .testimonials_container .college_testimonial_quote .college_testimonial_copy {
+      .newmolex .testimonials-container .college-testimonial-quote .college-testimonial-copy {
         position: relative;
-        width: 100%;
-        padding: 2rem;
-        text-align: center; }
-    .newmolex .testimonials_container .college_testimonial_image {
+        padding: 2rem; }
+    .newmolex .testimonials-container .college-testimonial-image {
       position: relative;
-      height: 17.5rem;
-      padding: 0; }
-      .newmolex .testimonials_container .college_testimonial_image .college_testimonial_bg_image {
+      height: 14.5rem; }
+      .newmolex .testimonials-container .college-testimonial-image .college-testimonial-bg-image {
         position: absolute;
         width: 100%;
         height: 100%;
         background: url(../images/college_testimonial_image_2.jpg) no-repeat center center;
         background-size: cover; }
-  .newmolex .spotlight_container {
+  .newmolex .spotlight-container {
     position: relative;
     padding: 0; }
-    .newmolex .spotlight_container.careers_spotlight .spotlight_bg_image {
+    .newmolex .spotlight-container.careers-spotlight .spotlight-bg-image {
       position: relative;
       width: 100%;
       height: 12.5rem;
       background: url(../images/careers_project_spotlight_image.jpg) no-repeat left center;
       background-size: cover; }
-    .newmolex .spotlight_container.college_spotlight .spotlight_bg_image {
+    .newmolex .spotlight-container.college-spotlight .spotlight-bg-image {
       position: absolute;
       width: 100%;
       height: 100%;
       background: url(../images/college_project_spotlight_image.jpg) no-repeat top center;
       background-size: cover; }
-    .newmolex .spotlight_container .spotlight_copy {
+    .newmolex .spotlight-container .spotlight-copy {
       position: relative;
       width: 100%;
       padding: 2rem;
       text-align: center;
       background: black;
       color: #ffffff; }
-      .newmolex .spotlight_container .spotlight_copy .hollow_button {
+      .newmolex .spotlight-container .spotlight-copy .hollow-btn {
         margin-bottom: 1rem; }
-  .newmolex .faq_container {
+  .newmolex .faq-container {
     padding: 2rem; }
-    .newmolex .faq_container h4 {
+    .newmolex .faq-container h4 {
       margin-bottom: 2rem;
       text-align: center; }
-    .newmolex .faq_container .col-xs-4 {
+    .newmolex .faq-container .col-xs-12 {
       margin: .5rem 0; }
-  .newmolex .jobs_info_container {
-    padding: 0; }
-    .newmolex .jobs_info_container p {
-      margin: 0; }
-    .newmolex .jobs_info_container .col-xs-6 {
-      position: relative;
-      padding: 2rem; }
-    .newmolex .jobs_info_container .jobs_search_cta_image {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background: url(../images/jobs_search_image_1.jpg) no-repeat top center;
-      background-size: cover; }
-    .newmolex .jobs_info_container .jobs_search_cta_copy {
-      position: relative;
-      text-align: center;
-      padding: 7rem 0 0 0; }
-  .newmolex .join_our_team_container {
+  .newmolex .join-our-team-container {
     position: relative;
     height: 12.5rem;
     width: 100%;
     background: url(../images/careers_join_team_image.jpg) no-repeat top center;
     background-size: cover; }
-    .newmolex .join_our_team_container .join_our_team_cta {
+    .newmolex .join-our-team-container .join-our-team-cta {
       position: absolute;
-      right: 0;
-      left: 0;
-      bottom: 1rem;
-      margin: 0 auto;
-      text-align: center; }
-      .newmolex .join_our_team_container .join_our_team_cta .red_button {
+      bottom: 1rem; }
+      .newmolex .join-our-team-container .join-our-team-cta .red-btn {
         margin-right: .5rem; }
-  .newmolex .college_support_image {
+  .newmolex .college-support-image {
     height: 10rem;
     width: 100%;
     margin: 0 auto;
     background: url(../images/college_support_image.jpg) no-repeat right center;
     background-size: cover; }
-  .newmolex .search_results_container {
-    overflow: auto;
-    width: 100%;
-    margin: 0 auto; }
-    .newmolex .search_results_container .job_search_container {
-      padding: 2rem; }
-    .newmolex .search_results_container .search_results_intro {
+  .newmolex .careers-footer {
+    padding: 2rem 1rem; }
+    .newmolex .careers-footer .careers-footer-links {
       padding: 0 2rem; }
-      .newmolex .search_results_container .search_results_intro span {
-        display: block;
-        font-family: sans-serif;
-        color: #444444;
-        font-weight: 1rem; }
-      .newmolex .search_results_container .search_results_intro span.job_title {
-        display: block;
-        font-family: sans-serif;
-        color: #E30536;
-        font-size: 1.65rem; }
-    .newmolex .search_results_container .search_results_list {
-      padding: 2rem 0; }
-    .newmolex .search_results_container .search_result {
-      padding: 2rem;
-      border-top: 1px solid #444444; }
-      .newmolex .search_results_container .search_result .job_title {
-        display: block;
-        margin: 0 0 .5rem 0;
-        color: #444444;
-        font-size: 1.175rem;
-        font-weight: 400; }
-      .newmolex .search_results_container .search_result .job_info {
-        display: block;
-        margin: 0 0 .5rem 0; }
-        .newmolex .search_results_container .search_result .job_info span {
-          display: inline-block;
-          padding: 0 0 0 .25rem;
-          margin: 0 0 0 .25rem;
-          color: #444444;
-          font-size: .75rem;
-          font-weight: 700;
-          border-left: 2px solid #444444; }
-          .newmolex .search_results_container .search_result .job_info span:first-child {
-            padding: 0;
-            margin: 0;
-            border-left: none; }
-    .newmolex .search_results_container .social_container {
-      text-align: center; }
-      .newmolex .search_results_container .social_container .social_title {
-        display: block;
-        margin: 0 0 .5rem 0;
-        color: #444444;
-        font-size: .875rem;
-        font-weight: 700; }
-      .newmolex .search_results_container .social_container .social_icons {
-        padding: .5rem 0;
-        margin: .25rem 0 0 0;
-        border-top: 1px solid #444444;
-        border-bottom: 1px solid #444444; }
-        .newmolex .search_results_container .social_container .social_icons img {
-          padding: 0 .25rem; }
-  .newmolex .careers_footer {
-    width: 100%;
-    margin: 0 auto;
-    padding: 2rem;
-    text-align: left;
-    background: #ffffff; }
-    .newmolex .careers_footer li {
+    .newmolex .careers-footer li {
       display: block;
       padding: 0 0 1rem 0; }
-      .newmolex .careers_footer li a {
+      .newmolex .careers-footer li a {
         color: #E30536;
         font-size: .75rem; }
-    .newmolex .careers_footer .careers_disclaimer {
-      padding: .75rem 0 0 0;
+    .newmolex .careers-footer .careers-disclaimer {
+      padding: 0 2rem;
       font-size: .75rem; }
-      .newmolex .careers_footer .careers_disclaimer a {
+      .newmolex .careers-footer .careers-disclaimer a {
         color: #E30536; }
+
+.close_icon, .close_button {
+  position: absolute;
+  z-index: 1201;
+  height: 1.5625rem;
+  width: 1.5625rem;
+  top: 1rem;
+  right: 2.25rem;
+  cursor: pointer; }
+  .close_icon.light, .close_button.light {
+    color: #ffffff; }
+    .close_icon.light div, .close_button.light div {
+      height: 1.5625rem;
+      width: 1.5625rem; }
+      .close_icon.light div:before, .close_icon.light div:after, .close_button.light div:before, .close_button.light div:after {
+        background-color: #ffffff; }
+  .close_icon.dark, .close_button.dark {
+    color: #444444; }
+    .close_icon.dark div, .close_button.dark div {
+      height: 1.5625rem;
+      width: 1.5625rem; }
+      .close_icon.dark div:before, .close_icon.dark div:after, .close_button.dark div:before, .close_button.dark div:after {
+        background-color: #444444; }
+  .close_icon div, .close_button div {
+    position: absolute;
+    top: 40%;
+    width: 100%; }
+    .close_icon div::before, .close_icon div::after, .close_button div::before, .close_button div::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      height: .1875rem;
+      width: 105%; }
+    .close_icon div::before, .close_button div::before {
+      -webkit-transform: rotate(-225deg);
+      -moz-transform: rotate(-225deg);
+      -ms-transform: rotate(-225deg);
+      -o-transform: rotate(-225deg);
+      transform: rotate(-225deg); }
+    .close_icon div::after, .close_button div::after {
+      -webkit-transform: rotate(225deg);
+      -moz-transform: rotate(225deg);
+      -ms-transform: rotate(225deg);
+      -o-transform: rotate(225deg);
+      transform: rotate(225deg); }
+
+.full_screen_video_container {
+  display: none;
+  position: fixed;
+  z-index: 1200;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.75); }
+  .full_screen_video_container .video {
+    position: absolute;
+    max-width: 112.5rem;
+    max-height: 63rem;
+    width: 90%;
+    height: 90%;
+    right: 0;
+    left: 0;
+    top: 50%;
+    margin: 0 auto;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%); }
+  .full_screen_video_container iframe {
+    width: 100%;
+    height: 100%; }
 
 /*# sourceMappingURL=style_mobile.css.map */
